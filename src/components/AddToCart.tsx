@@ -4,7 +4,7 @@ import { CartItem, useStateDispatch } from "./AppState";
 export interface AddToCartProps {
   addToCart: (item: Omit<CartItem, "quantity">) => void;
 }
-
+// Higher order component
 export function withAddToCart<OriginalProps extends AddToCartProps>(
   ChildComponent: React.ComponentType<OriginalProps>
 ) {
